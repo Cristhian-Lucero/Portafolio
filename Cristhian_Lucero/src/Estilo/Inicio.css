@@ -1,0 +1,143 @@
+.cl-inicio {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    align-items: center;
+    padding: 7rem 1.5rem 2rem;
+
+}
+.cl-inicio-title {
+  border-left: 2px solid rgb(245, 99, 42);
+  color: rgba(255, 255, 255, 0.678);
+  text-align: left;
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+}
+
+
+.cl-inicio-title1 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 0.4rem;
+  color: rgba(255, 255, 255, 0.664);
+  font-size: clamp(1rem, 3vw, 1.5rem); 
+  font-weight: 300;
+}
+
+.cl-inicio-title2 {
+  color: #fff;
+  font-size: clamp(2rem, 6vw, 3.5rem); 
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+
+.cl-inicio-title3 {
+  color: #fff;
+  font-size: clamp(0.9rem, 2.8vw, 1rem);
+  font-weight: 400;
+}
+.cl-inicio-description {
+    padding: 10px 10px 10px 10px;
+    color: rgb(255, 255, 255);
+    border-top: rgb(245, 99, 42) 2px solid;
+    border-right: rgb(245, 99, 42) 2px solid;
+    text-align: left;
+        width: 100%;
+        max-width: 100%;
+}
+.cl-inicio-info {
+    display: flex; 
+    flex-direction: column;
+    align-items: left;
+    max-width: 700px;
+}
+.cl-inicio-img1 {
+    border-radius: 20%;
+    width: 85%;
+    height: 85%;
+    
+}
+.cl-inicio-img {
+    width: 300px;           
+    height: 300px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+        min-width: 0;     /* clave para grid */
+        max-width: 100%;
+}
+@media (max-width: 768px) {
+    
+
+    /* Mobile: foto primero */
+    .cl-inicio-img {
+        order: -1;  /* La foto aparece arriba */
+        margin-bottom: 1.5rem;
+    }
+
+    .cl-inicio{
+        grid-template-columns: minmax(0,1fr);  /* 1 col sin overflow */
+        gap: 1rem;                             
+        padding: 2rem 1rem;                    /* más seguro en móvil */
+        height: auto;                          /* por si estaba forzado */
+        overflow-x: clip;                      /* corta lo que se sale en X */
+    }
+}
+
+
+.cl-inicio-img::after{
+    content:"";
+    position:absolute;
+    left:50%; top:50%;
+    translate:-50% -50%;
+    width: calc(90%);
+    height: calc(90%);
+    background:
+        linear-gradient(to right, transparent, rgb(255, 72, 0), transparent) center top/88% 1px no-repeat,
+        linear-gradient(to right, transparent, rgb(255, 72, 0), transparent) center bottom/88% 1px no-repeat,
+        linear-gradient(to bottom, transparent, rgb(255, 72, 0), transparent) left center/1px 88% no-repeat,
+        linear-gradient(to bottom, transparent, rgb(255, 72, 0), transparent) right center/1px 88% no-repeat;
+}
+
+
+.cl-inicio-img::before{
+    content:"";
+    position:absolute;
+    inset:-100px;                 /* más grande que la tarjeta */
+    background:
+        radial-gradient(closest-side, rgba(233, 92, 32, 0.986), transparent 100%);
+    filter: blur(80px);          /* suaviza */
+    z-index:-1;                  /* detrás */
+}
+
+.cl-inicio-botones{
+    display: flex;
+    justify-content: center;
+    gap: 12px;                 /* separación entre botones */
+}
+.cl-inicio-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;                  /* espacio entre icono y texto */
+    padding: 5px 20px;
+    border-radius: 8px;
+    background: rgb(255, 102, 0);
+    color: #111;
+    cursor: pointer;
+    border: rgb(5, 5, 5) 1px solid;
+}
+.cl-inicio-botones-img {
+    width: 22px;               /* tamaño consistente del icono */
+    height: 22px;
+}
+
+

@@ -1,0 +1,29 @@
+.cl-recipiente {
+    display: inline-block;
+    margin: 8px;
+}
+.cl-recipiente-strong {
+    color: white;
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cl-recipiente-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cl-recipiente-img {
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+}
+.cl-recipiente-img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    rotate: 360deg;
+}
+
+
+

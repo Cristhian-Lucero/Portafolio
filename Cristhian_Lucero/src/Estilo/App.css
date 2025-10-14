@@ -1,0 +1,84 @@
+
+.cl-app{
+    padding: 40px 0;
+}
+.cl-app-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.cl-app-title-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cl-app-title-header{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 10px;
+    gap: 16px;
+}
+.cl-app-img{
+    height: 48px;
+}
+.atajos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f84f006b;
+}
+.atajos nav {
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+.atajos a {
+    padding: 3px;
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo { display:none;}
+
+@media (max-width: 599px){
+  .atajos{ justify-content:center; } 
+  .atajos nav{ margin-left:0; }      
+}
+
+@media (min-width: 600px) {
+    .atajos nav {
+        align-self: end;
+    }
+    .logo {
+        padding: 3px;
+        display: block;
+        height: 42px;
+        width: 45px;
+
+    }
+    .atajos a {
+        margin: 0 5px;
+    }
+}
+
+.footer{
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    background: rgba(44, 44, 44, 0.24);
+    color: rgba(255, 255, 255, 0.363);
+}
