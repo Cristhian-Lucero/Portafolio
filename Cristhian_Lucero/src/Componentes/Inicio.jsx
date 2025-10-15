@@ -25,7 +25,7 @@ export function Inicio ( {nam, title, recidencia, children, link, git, img} ){
                 <div className="cl-inicio-botones">
                     <button className="cl-inicio-btn" onClick={() => click(git)}><img className="cl-inicio-botones-img" src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png"></img> GitHub</button>
                     <button className="cl-inicio-btn" onClick={() => click(link)}><img className="cl-inicio-botones-img" src="https://cdn-icons-png.flaticon.com/128/4401/4401412.png"></img>Linkedin</button>
-                    <button className="cl-inicio-btn" onClick={() => click2()}><img className="cl-inicio-botones-img" src="https://cdn-icons-png.flaticon.com/128/909/909263.png"></img>CV</button>
+                    <button className="cl-inicio-btn" onClick={() => click2()}><img className="cl-inicio-botones-img" src="https://cdn-icons-png.flaticon.com/128/4606/4606625.png"></img>CV</button>
                 </div>
             </div>
             <div className="cl-inicio-img">
