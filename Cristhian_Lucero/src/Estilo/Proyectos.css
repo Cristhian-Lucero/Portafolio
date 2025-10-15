@@ -20,6 +20,9 @@
     border-radius: 12px;
     aspect-ratio: 16 / 9;      /* mantiene 16:9 */
 }
+.cl-proyecto-img:hover{
+  cursor: pointer;
+}
 .cl-proyecto-titulo {
     padding: 10px;
     color: rgb(253, 93, 1);
