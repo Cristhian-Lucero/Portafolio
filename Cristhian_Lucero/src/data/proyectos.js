@@ -17,7 +17,7 @@ const Proyectos = [
   {
     name: 'Sistema de gestión de proyectos (2022)',
     img: ges,
-    url: 'https://github.com/Cristhian-Lucero/Flutter_Curso_Verano.git',
+    url: '',
     desc: 'Aplicación de escritorio desarrollada en Python con SQLite para el almacenamiento local. Implementé la lógica de negocio (modificaciones y control de estados), un modelo de datos simple y una interfaz que permite registrar proyectos, consultar y actualizar información de forma clara.'
   }
 ]
