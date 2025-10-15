@@ -30,7 +30,7 @@ export function App() {
         <div className="cl-app">
           <Inicio 
             nam="Cristhian Lucero"
-            title="Desarrollador Full Stack"
+            title="Desarrollador Back End"
             recidencia="Paraguay - Asunción"
             link="https://www.linkedin.com/in/cristhian-lucero"
             git="https://github.com/Cristhian-Lucero"
