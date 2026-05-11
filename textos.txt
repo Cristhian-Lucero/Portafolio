@@ -1,7 +1,5 @@
-import ima from '../assets/image.png'
-import flutter from '../assets/flutter.png'
-import ges from '../assets/a.png'
-export const Proyectos = [
+Yo: Soy estudiante de Ingeniería en Informática en la Facultad Politécnica de la Universidad Nacional de Asunción. Me apasiona la tecnología y estoy comprometido con el aprendizaje continuo y la aplicación de mis conocimientos en el desarrollo de soluciones innovadoras. Tengo experiencia en el trabajo con lenguajes de programación y en la gestión de proyectos relacionados con sistemas de información. Estoy enfocado en seguir creciendo profesionalmente y contribuir al avance de la tecnología en el ámbito de la informática.
+const Proyectos = [
   {
     name: 'Sistema de Gestión de Contenidos (CMS) ',
     img: ima,

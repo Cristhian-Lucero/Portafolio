@@ -1,10 +1,11 @@
 import { createRoot } from 'react-dom/client'
-import './Estilo/index.css'
-import { App } from './App.jsx'
+import App from './App.jsx'
+import { StrictMode } from 'react'
+import './index.css'
 
 const root = createRoot(document.getElementById('root'))
 root.render(
-  <
-  App
-  />
+  <StrictMode>
+    <App />
+  </StrictMode>,
 )

@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #FAEEDA;
+    padding: 10px 20px;
+    background-color: white;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+    top:0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.header-nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    gap: 16px;
+}
+.header-nav a{
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+    padding: 4px 12px;
+}
