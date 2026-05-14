@@ -6,6 +6,7 @@
     min-height: 100vh;
     gap: 150px;
     padding-top: 100px;
+    background: linear-gradient(to bottom, #ebb4551c, white);
 }
 .section-div{
     display: flex;
@@ -39,7 +40,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    text-align: center;
+}
+.section-div-info-title h3{
+    margin-bottom: 10px;
 }
 .section-div p{
     max-width: 400px;
@@ -112,10 +116,17 @@
     font-size: 13px;
     font-weight: 700;
 }
+.section-ocult{
+    text-align: center;
+    display: none;
+}
 
 @media (max-width:1400px) {
     #section-div-info1{
         margin: 10px;
+    }
+    .section-ocult {
+        display: block;
     }
     .section {
         display: flex;
@@ -126,6 +137,7 @@
         margin-top: 20px;
         border-top: 1px solid #BA7517;
         display: flex;
+        justify-content: center;
         padding-top: 10px;
         gap:15px;
     }

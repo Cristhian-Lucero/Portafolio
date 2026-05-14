@@ -1,5 +1,5 @@
 const TextAbountMe = "Me apasiona la tecnología y estoy comprometido con el aprendizaje continuo. Tengo experiencia con lenguajes de programación y en la gestión de proyectos relacionados con sistemas de información. Estoy enfocado en seguir creciendo profesionalmente y contribuir al avance de la tecnología en el ámbito de la informática."
-const extraInfo = "Estudiante de Ingeniería en Informática en la Facultad Politécnica de la Universidad Nacional de Asunción"
+const extraInfo = "Estudiante de Ingeniería en Informática en la Facultad Politécnica de la Universidad Nacional de Asunción."
 export const toMe = {
     info: TextAbountMe,
     extraInfo: extraInfo,

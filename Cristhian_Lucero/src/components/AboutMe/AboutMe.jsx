@@ -9,10 +9,13 @@ export function AboutMe({ fotoPerfil, toMe }) {
           <div className="section-div-info-title">
             <h1>{toMe.name}</h1>
             <h3>{toMe.cargo}</h3>
+            <p>{toMe.info}</p>
           </div>
-          <p>{toMe.info}</p>
-          <div className="section-div-links">
-            <IconsLinks toMe={toMe} />
+          <div className="section-ocult">
+            <p>{toMe.extraInfo}</p>
+            <div className="section-div-links">
+              <IconsLinks toMe={toMe} />
+            </div>
           </div>
         </div>
       </div>
