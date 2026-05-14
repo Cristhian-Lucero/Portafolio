@@ -1,6 +1,9 @@
 .proyects {
     border-right: 1px solid black;
     display: grid;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 .proyects h1{
     text-align: center;
@@ -9,23 +12,14 @@
     display: flex;
     align-items: center;
 }
-.proyects-article button{
-    width: 20px;
-    height: 20px;
+.proyects-button{
+    width: 60px;
+    height: 40px;
     border: none;
     background-color: white;
 }
-.proyects-div{
-    height: 100%;
-}
 .proyects-list{
     list-style: none;
-    display:grid;
-    text-align: center;
-    grid-template-columns: repeat(1,1fr);
-}
-.proyects-list li{
-    min-width: 100%;
 }
 .proyects-list img{
     width: 100%;

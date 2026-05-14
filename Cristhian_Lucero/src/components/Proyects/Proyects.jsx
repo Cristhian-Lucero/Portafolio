@@ -7,13 +7,13 @@ export function Proyects() {
     <section id="Proyects" className="proyects">
       <h1>Proyectos</h1>
       <article className="proyects-article">
-        <button>{`<`}</button>
+        <button className="proyects-button">{`<`}</button>
         <div className="proyects-div">
           <ul className="proyects-list">
             <AllProyects proyectos={datos} />
           </ul>
         </div>
-        <button>{`>`}</button>
+        <button className="proyects-button">{`>`}</button>
       </article>
     </section>
   )
