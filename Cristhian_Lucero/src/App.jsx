@@ -11,6 +11,7 @@ function App() {
       <AboutMe fotoPerfil={imgPerfil} toMe={toMe} />
       <div className="secciones">
         <Proyects />
+        <Proyects />
         {/*TODO: Certificados */}
       </div>
     </>
