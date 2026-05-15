@@ -1,10 +1,11 @@
 import './Header.css'
-import logoReact from '../../assets/react.svg'
 export function Header() {
-  const logo = logoReact //TODO
   return (
     <header className="header">
-      <img src={logo} alt="imagen" />
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/4191/4191241.png"
+        alt="imagen"
+      />
       <nav className="header-nav">
         <a href="#aboutMe">Sobre Mí</a>
         <a href="#Proyects">Proyectos & Certificados</a>
