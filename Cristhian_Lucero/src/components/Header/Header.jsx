@@ -7,7 +7,7 @@ export function Header() {
       <img src={logo} alt="imagen" />
       <nav className="header-nav">
         <a href="#aboutMe">Sobre Mí</a>
-        <a href="#Proyects">Proyectos</a>
+        <a href="#Proyects">Proyectos & Certificados</a>
         <a href="#tecnologies">Tecnologias</a>
       </nav>
     </header>

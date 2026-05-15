@@ -1,20 +1,20 @@
 import { AllProyects } from './AllProyects'
 import './Proyects.css'
-import { Proyectos as datos } from '../../data/proyectos'
 import { useMove } from '../../hooks/useMove'
 
-export function Proyects() {
+export function Proyects({ title, datos }) {
   const {
     position,
     handleMouseDown,
     handleMouseUp,
     handleTouchEnd,
     handleTouchStart,
+    setPosition,
   } = useMove({ datos })
   return (
     <section id="Proyects" className="proyects">
       <article className="proyects-article">
-        <h1>Proyectos</h1>
+        <h1>{title}</h1>
         <div
           className="proyects-div"
           onTouchStart={handleTouchStart}
@@ -33,6 +33,15 @@ export function Proyects() {
               onMouseUp={handleMouseUp}
             />
           </ul>
+        </div>
+        <div className="dots">
+          {datos.map((_, i) => (
+            <span
+              key={i}
+              className={`dot ${i === position ? 'dot--active' : ''}`}
+              onClick={() => setPosition(i)}
+            />
+          ))}
         </div>
       </article>
     </section>

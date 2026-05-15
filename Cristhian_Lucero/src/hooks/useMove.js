@@ -27,5 +27,5 @@ export const useMove = ({datos}) => {
         if (dif > 50) prev()
         if (dif < -50) next()
       }
-    return {position,handleMouseDown,handleMouseUp, handleTouchEnd, handleTouchStart}
+    return {position,handleMouseDown,handleMouseUp, handleTouchEnd, handleTouchStart, setPosition}
 }
