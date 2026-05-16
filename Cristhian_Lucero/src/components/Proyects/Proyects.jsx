@@ -4,6 +4,7 @@ import { useMove } from '../../hooks/useMove'
 
 export function Proyects({ title, datos }) {
   const {
+    isDragging,
     position,
     handleMouseDown,
     handleMouseUp,
@@ -31,6 +32,7 @@ export function Proyects({ title, datos }) {
               proyectos={datos}
               onMouseDown={handleMouseDown}
               onMouseUp={handleMouseUp}
+              isDragging={isDragging}
             />
           </ul>
         </div>

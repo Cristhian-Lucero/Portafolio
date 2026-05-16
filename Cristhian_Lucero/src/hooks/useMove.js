@@ -2,6 +2,7 @@ import { useRef, useState } from "react"
 
 export const useMove = ({datos}) => {
     const [position, setPosition] = useState(0)
+    const isDragging = useRef(false)
       const touchX = useRef(0)
     
       const next = () => {
@@ -21,11 +22,12 @@ export const useMove = ({datos}) => {
       }
       const handleMouseDown = (evento) => {
         touchX.current = evento.clientX
+        isDragging.current = false
       }
       const handleMouseUp = (evento) => {
         const dif = evento.clientX - touchX.current
-        if (dif > 50) prev()
-        if (dif < -50) next()
+        if (dif > 50) { prev(); isDragging.current = true }
+        if (dif < -50) { next(); isDragging.current = true }
       }
-    return {position,handleMouseDown,handleMouseUp, handleTouchEnd, handleTouchStart, setPosition}
+    return {isDragging, position,handleMouseDown,handleMouseUp, handleTouchEnd, handleTouchStart, setPosition}
 }

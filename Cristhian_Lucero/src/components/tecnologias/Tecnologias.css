@@ -1,0 +1,41 @@
+#tecnologies{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    padding-bottom: 50px;
+    background: linear-gradient(to top, #ebb4551c, white);
+}
+#tecnologies h1{
+    text-decoration:underline;
+}
+.tec-div{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.tec-div-img {
+    height: 55px;
+    width: auto;
+    cursor: pointer;
+}
+@keyframes girar {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.girando {
+    animation: girar 0.5s ease ;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width:400px){
+    .tec-div-img {
+        height: 40px;
+        width: auto;
+    }
+}

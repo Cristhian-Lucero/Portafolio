@@ -1,5 +1,7 @@
-const Lenguajes = [
-  {
+const Tecnologias = {
+  title: 'Tecnologias',
+  elements: 
+  [{
     name: 'Java',
     img: 'https://cdn-icons-png.flaticon.com/128/226/226777.png',
   },
@@ -13,7 +15,7 @@ const Lenguajes = [
   },
   {
     name: 'PostgreSQL',
-    img: 'https://cdn-icons-png.flaticon.com/128/10828/10828570.png',
+    img: 'https://cdn-icons-png.flaticon.com/128/5968/5968342.png',
   },
   {
     name: 'Django',
@@ -30,6 +32,6 @@ const Lenguajes = [
   {
     name: 'React',
     img: 'https://cdn-icons-png.flaticon.com/128/10303/10303368.png'
-  }
-]
-export default Lenguajes;
+  }]
+}
+export default Tecnologias;

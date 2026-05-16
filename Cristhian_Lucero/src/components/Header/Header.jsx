@@ -8,7 +8,7 @@ export function Header() {
       />
       <nav className="header-nav">
         <a href="#aboutMe">Sobre Mí</a>
-        <a href="#Proyects">Proyectos & Certificados</a>
+        <a href="#secciones">Proyectos & Certificados</a>
         <a href="#tecnologies">Tecnologias</a>
       </nav>
     </header>
