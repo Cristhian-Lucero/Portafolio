@@ -8,6 +8,7 @@ import { Proyectos as datos } from './data/proyectos'
 import { Certs } from './data/certs'
 import './App.css'
 import { Tecnologias } from './components/tecnologias/Tecnologias'
+import { Footer } from './components/Footer/Footer'
 function App() {
   return (
     <>
@@ -16,9 +17,9 @@ function App() {
       <div id="secciones" className="secciones">
         <Proyects title="Proyectos" datos={datos} />
         <Proyects title="Certificados" datos={Certs} />
-        {/*TODO: Certificados */}
       </div>
       <Tecnologias tecnologias={tecnologias} />
+      <Footer />
     </>
   )
 }

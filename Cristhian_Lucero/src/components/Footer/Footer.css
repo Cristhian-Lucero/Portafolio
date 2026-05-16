@@ -1,0 +1,8 @@
+.footer-spam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c2416;  
+    color: #c4a882;
+    min-height: 3vh;
+}

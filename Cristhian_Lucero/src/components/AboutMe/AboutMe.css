@@ -26,6 +26,7 @@
 }
 .section-div-links{
     display: none;
+    transition: all 0.3s ease;
 }
 
 .section-div-img {
@@ -34,8 +35,12 @@
     border-radius: 50px;
     border: 1px solid #BA7517;
     box-shadow: 0 0 20px rgb(2, 2, 2, 0.5);
-    
+    transition: all 0.3s ease;
 }
+.section-div-img:hover{
+    transform: scale(1.2);
+}
+
 .section-div-info-title {
     display: flex;
     flex-direction: column;
@@ -157,14 +162,17 @@
         width: 70%;
         border-radius: 15px;
     }
+    .section-div-img:hover{
+        transform: scale(1.1);
+    }
     #section-div-info1{
         font-size: 0.9rem;
         text-align: center;
     }
     .section {
         display: flex;
+        padding-top: 80px;
         flex-direction: column;
-        margin: 0 10px;
     }
     .section-div-info {
         padding: 20px;

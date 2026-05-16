@@ -29,12 +29,12 @@ export function AboutMe({ fotoPerfil, toMe }) {
 
           <div className="quick-info">
             <div>
-              <strong>+4</strong>
+              <strong>+5</strong>
               <span>Años aprendiendo</span>
             </div>
 
             <div>
-              <strong>5+</strong>
+              <strong>7+</strong>
               <span>Tecnologías</span>
             </div>
           </div>
